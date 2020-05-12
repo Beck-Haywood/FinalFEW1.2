@@ -4,7 +4,7 @@ import MetalSpace from './MetalSpace';
 import './MetalList.css';
 
 function MetalList() {
-    const spaces = data.map(({band_name, formed, origin, fans}, i) => {
+    const spaces = data.map(({band_name, formed, origin, fans, split}, i) => {
       return (
         <MetalSpace
           id={i}
@@ -12,6 +12,7 @@ function MetalList() {
           formed={formed}
           origin={origin}
           fans={fans}
+          split={split}
         />
       )
     })
